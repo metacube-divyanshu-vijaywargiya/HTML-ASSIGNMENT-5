@@ -26,209 +26,278 @@
 </head>
 <body>
     <div class="d-flex w-auto">
-        <div class="leftbar">
+        <div class="leftbar " style="position: static;height: 100vh; overflow-y: scroll;overflow-x: hidden; scrollbar-width: none;">
               <div style="min-height: 120px;">
                 <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                  <div class="card card-body custom_left_side p-l m-0" style="width: 300px;">
-                    <div class="logodiv text-center">
+                  <div class="card card-body custom_left_side p-l m-0" >
+                    <div class="logodiv ps-5">
                         <img src="image/logo.png" width="50%" alt="logo">
                     </div>
-                    <div class="navigation text-white">
-                        <p>Navigation</p>
+                    <div class="navigation mt-4">
+                        <p class="side-nav-title">NAVIGATION</p>
                         <ul class="list-unstyled ps-0">
                             <li class="mb-1">
-                              <button class="btn btn-toggle align-items-center rounded text-white collapsed" data-bs-toggle="collapse" data-bs-target="#Dashboard-collapse" aria-expanded="true">
-                                Dashboard
+                              <button class="btn btn-toggle align-items-center rounded sidebar-item-normal collapsed d-flex align-items-center gap-3" data-bs-toggle="collapse" data-bs-target="#Dashboard-collapse" aria-expanded="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house-door" viewBox="0 0 17 17">
+                                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                                </svg>
+                                <span>
+                                  Dashboard
+                                </span>
                               </button>
                               <div class="collapse show" id="Dashboard-collapse">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                  <li><a href="#" class="rounded">Analytics</a></li>
-                                  <li><a href="#" class="rounded">Ecommerce</a></li>
-                                  <li><a href="#" class="rounded">Projects</a></li>
-                                  <li><a href="#" class="rounded">CRM</a></li>
-                                  <li><a href="#" class="rounded">E-Wallet</a></li>
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                                  <li><a href="#" class="rounded side-nav-link sidebar-item-normal py-1">Analytics</a></li>
+                                  <li><a href="#" class="rounded side-nav-link sidebar-item-normal py-1">Ecommerce</a></li>
+                                  <li><a href="#" class="rounded side-nav-link sidebar-item-normal py-1">Projects</a></li>
+                                  <li><a href="#" class="rounded side-nav-link sidebar-item-normal py-1">CRM</a></li>
+                                  <li><a href="#" class="rounded side-nav-link sidebar-item-normal py-1">E-Wallet</a></li>
                                 </ul>
                               </div>
                             </li>
                           </ul>
                     </div>
                     <div class="apps">
-                        <p class="text-white">APPS</p>
+                        <p class="side-nav-title">APPS</p>
                         <ul  class="list-unstyled ps-0">
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded text-white">
-                                  Calendar
+                                <button class="btn btn-toggle align-items-center rounded sidebar-item-normal d-flex align-items-center gap-3">
+                                  <!-- calendar icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-calendar" viewBox="0 0 17 17">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                                  </svg>
+                                  <span>
+                                    Calendar
+                                  </span>
                                 </button>
                             </li>
 
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded text-white">
-                                  Chat
+                                <button class="btn btn-toggle align-items-center rounded sidebar-item-normal d-flex align-items-center gap-3">
+                                  <!-- chat icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-wechat" viewBox="0 0 17 17">
+                                    <path d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.32.32 0 0 0-.12.366l.218.81a.6.6 0 0 1 .029.117.166.166 0 0 1-.162.162.2.2 0 0 1-.092-.03l-1.057-.61a.5.5 0 0 0-.256-.074.5.5 0 0 0-.142.021 5.7 5.7 0 0 1-1.576.22M9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.6.6 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.63.63 0 0 0 .098.356"/>
+                                    <path d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.5.5 0 0 0-.032.14.19.19 0 0 0 .193.193q.06 0 .111-.029l1.268-.733a.6.6 0 0 1 .308-.088q.088 0 .171.025a6.8 6.8 0 0 0 1.625.26 4.5 4.5 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02l.15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826m4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0m3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0"/>
+                                  </svg>
+                                  <span>
+                                    Chat
+                                  </span>
                                 </button>
                             </li>
 
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded text-white">
-                                  CRM
+                                <button class="btn btn-toggle align-items-center rounded sidebar-item-normal d-flex align-items-center gap-3">
+                                  <!-- speed crm icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 17 17">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
+                                    <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
+                                  </svg>
+                                  <span>
+                                    CRM
+                                  </span>
                                 </button>
                             </li>
   
                             
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#Ecommerce-collapse" aria-expanded="false">
-                                  Ecommerce
+                                <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal d-flex align-items-center gap-3" data-bs-toggle="collapse" data-bs-target="#Ecommerce-collapse" aria-expanded="false">
+                                  <!-- shop svg icon -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 17 17">
+                                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5"/>
+                                  </svg>
+                                  <span>
+                                    Ecommerce
+                                  </span>
                                 </button>
                                 <div class="collapse" id="Ecommerce-collapse">
-                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                    <li><a href="#" class=" rounded">Products</a></li>
-                                    <li><a href="#" class=" rounded">Prouct Details</a></li>
-                                    <li><a href="#" class=" rounded">Orders</a></li>
-                                    <li><a href="#" class=" rounded">Order Details</a></li>
-                                    <li><a href="#" class="rounded">Customers</a></li>
-                                    <li><a href="#" class="rounded">Shopping Cart</a></li>
-                                    <li><a href="#" class="rounded">Checkout</a></li>
-                                    <li><a href="#" class="rounded">Sellers</a></li>
+                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small sidebar-item-normal">
+                                    <li><a href="#" class="rounded side-nav-link py-1">Products</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Prouct Details</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Orders</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Order Details</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Customers</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Shopping Cart</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Checkout</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Sellers</a></li>
                                   </ul>
                                 </div>
                             </li>
 
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#Email-collapse" aria-expanded="false">
-                                  Email
+                                <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal d-flex align-items-center gap-3" data-bs-toggle="collapse" data-bs-target="#Email-collapse" aria-expanded="false">
+                                  <!-- email icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg>
+                                  <span>
+                                    Email
+                                  </span>
                                 </button>
                                 <div class="collapse" id="Email-collapse">
-                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                    <li><a href="#" class=" rounded">Inbox</a></li>
-                                    <li><a href="#" class=" rounded">Read Email</a></li>
+                                  <ul class="btn-toggle-nav list-unstyled pb-1 ">
+                                    <li><a href="#" class=" rounded side-nav-link py-1">Inbox</a></li>
+                                    <li><a href="#" class=" rounded side-nav-link py-1">Read Email</a></li>
                                   </ul>
                                 </div>
                             </li>
 
                             
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#Projects-collapse" aria-expanded="false">
-                                  Projects
+                                <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal d-flex align-items-center gap-3" data-bs-toggle="collapse" data-bs-target="#Projects-collapse" aria-expanded="false">
+                                  <!-- breifcase icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+                                  </svg>
+                                  <span>
+                                    Projects
+                                  </span>
                                 </button>
                                 <div class="collapse" id="Projects-collapse">
-                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                    <li><a href="#" class=" rounded">List</a></li>
-                                    <li><a href="#" class=" rounded">Details</a></li>
-                                    <li><a href="#" class=" rounded">Gantt</a></li>
-                                    <li><a href="#" class=" rounded">Create Project</a></li>
+                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small sidebar-item-normal">
+                                    <li><a href="#" class=" rounded side-nav-link py-1">List</a></li>
+                                    <li><a href="#" class=" rounded side-nav-link py-1">Details</a></li>
+                                    <li><a href="#" class=" rounded side-nav-link py-1">Gantt</a></li>
+                                    <li><a href="#" class=" rounded side-nav-link py-1">Create Project</a></li>
                                   </ul>
                                 </div>
                             </li>
 
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed text-white">
-                                  Social Feed
+                                <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal d-flex align-items-center gap-3">
+                                  <!-- wifi icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-wifi" viewBox="0 0 17 17">
+                                    <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+                                    <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                                  </svg>
+                                  <span>
+                                    Social Feed
+                                  </span>
                                 </button>
                             </li>
 
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#Tasks-collapse" aria-expanded="false">
-                                  Tasks
+                                <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal d-flex align-items-center gap-3" data-bs-toggle="collapse" data-bs-target="#Tasks-collapse" aria-expanded="false">
+                                  <!-- paper icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-easel" viewBox="0 0 16 16">
+                                    <path d="M8.5 6a.5.5 0 1 0-1 0h-2A1.5 1.5 0 0 0 4 7.5v2A1.5 1.5 0 0 0 5.5 11h.473l-.447 1.342a.5.5 0 1 0 .948.316L7.027 11H7.5v1a.5.5 0 0 0 1 0v-1h.473l.553 1.658a.5.5 0 1 0 .948-.316L10.027 11h.473A1.5 1.5 0 0 0 12 9.5v-2A1.5 1.5 0 0 0 10.5 6zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                  </svg>
+                                  <span>
+                                    Tasks
+                                  </span>
                                 </button>
                                 <div class="collapse" id="Tasks-collapse">
-                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                    <li><a href="#" class=" rounded">List</a></li>
-                                    <li><a href="#" class=" rounded">Details</a></li>
-                                    <li><a href="#" class=" rounded">Kanban Board</a></li>
+                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small sidebar-item-normal ">
+                                    <li><a href="#" class=" rounded side-nav-link py-1">List</a></li>
+                                    <li><a href="#" class=" rounded side-nav-link py-1">Details</a></li>
+                                    <li><a href="#" class=" rounded side-nav-link py-1">Kanban Board</a></li>
                                   </ul>
                                 </div>
                             </li>
 
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed text-white">
-                                  File Manager
+                                <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal d-flex align-items-center gap-3">
+                                  <!-- folder icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-symlink" viewBox="0 0 16 16">
+                                    <path d="m11.798 8.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                                    <path d="m.5 3 .04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2m.694 2.09A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09l-.636 7a1 1 0 0 1-.996.91H2.826a1 1 0 0 1-.995-.91zM6.172 2a1 1 0 0 1 .707.293L7.586 3H2.19q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98z"/>
+                                  </svg>
+                                  <span>
+                                    File Manager
+                                  </span>
                                 </button>
                             </li>
                         </ul>
                     </div>
                     <div class="custom">
-                        <p class="text-white">Custom</p>
+                        <p class="side-nav-title">CUSTOM</p>
                         <ul  class="list-unstyled ps-0">
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#Pages-collapse" aria-expanded="false">
-                                  Pages
+                                <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal d-flex align-items-center gap-3" data-bs-toggle="collapse" data-bs-target="#Pages-collapse" aria-expanded="false">
+                                  <!-- files icon svg -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-journals" viewBox="0 0 17 17">
+                                    <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2"/>
+                                    <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0"/>
+                                  </svg>
+                                  <span>
+                                    Pages
+                                  </span>
                                 </button>
                                 <div class="collapse" id="Pages-collapse">
-                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                    <li><a href="#" class=" rounded">Profile</a></li>
-                                    <li><a href="#" class=" rounded">Profile 2</a></li>
-                                    <li><a href="#" class=" rounded">Invoice</a></li>
-                                    <li><a href="#" class=" rounded">Pricing</a></li>
-                                    <li><a href="#" class="rounded">FAQ</a></li>
-                                    <li><a href="#" class="rounded">Maintenance</a></li>
+                                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small sidebar-item-normal">
+                                    <li><a href="#" class="rounded side-nav-link py-1">Profile</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Profile 2</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Invoice</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Pricing</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">FAQ</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Maintenance</a></li>
                                     <li class="mb-1">
-                                        <button class="btn btn-toggle align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#Authentication-collapse" aria-expanded="false">
+                                        <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal" data-bs-toggle="collapse" data-bs-target="#Authentication-collapse" aria-expanded="false">
                                           Authentication
                                         </button>
                                         <div class="collapse" id="Authentication-collapse">
-                                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                            <li><a href="#" class=" rounded">Login</a></li>
-                                            <li><a href="#" class=" rounded">Login 2</a></li>
-                                            <li><a href="#" class=" rounded">Register</a></li>
-                                            <li><a href="#" class=" rounded">Register 2</a></li>
-                                            <li><a href="#" class="rounded">Logout</a></li>
-                                            <li><a href="#" class="rounded">Logout 2</a></li>
-                                            <li><a href="#" class="rounded">Recover Password</a></li>
-                                            <li><a href="#" class="rounded">Recover Password 2</a></li>
-                                            <li><a href="#" class="rounded">Lock Screen</a></li>
-                                            <li><a href="#" class="rounded">Lock Screen 2</a></li>
-                                            <li><a href="#" class="rounded">Confirm Mail</a></li>
-                                            <li><a href="#" class="rounded">Confirm Mail 2</a></li>
+                                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small sidebar-item-normal">
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Login</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Login 2</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Register</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Register 2</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Logout</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Logout 2</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Recover Password</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Recover Password 2</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Lock Screen</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Lock Screen 2</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Confirm Mail</a></li>
+                                            <li><a href="#" class="rounded side-nav-link-inner py-1">Confirm Mail 2</a></li>
                                           </ul>
                                         </div>
                                     </li>
                                     <li class="mb-1">
-                                        <button class="btn btn-toggle align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#Error-collapse" aria-expanded="false">
-                                          Error
+                                        <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal " data-bs-toggle="collapse" data-bs-target="#Error-collapse" aria-expanded="false">
+                                            Error
                                         </button>
                                         <div class="collapse" id="Error-collapse">
-                                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                            <li><a href="#" class=" rounded">Error 404</a></li>
-                                            <li><a href="#" class=" rounded">Error 404-alt</a></li>
-                                            <li><a href="#" class=" rounded">Error 500</a></li>
+                                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small sidebar-item-normal">
+                                            <li><a href="#" class=" rounded side-nav-link-inner py-1">Error 404</a></li>
+                                            <li><a href="#" class=" rounded side-nav-link-inner py-1">Error 404-alt</a></li>
+                                            <li><a href="#" class=" rounded side-nav-link-inner py-1">Error 500</a></li>
                                           </ul>
                                         </div>
                                     </li>
-                                    <li class="mb-1">
-                                        <button class="btn btn-toggle align-items-center rounded text-white">
-                                          Starter Page
-                                        </button>
-                                    </li>
-                                    <li class="mb-1">
-                                        <button class="btn btn-toggle align-items-center rounded text-white">
-                                          With preloader
-                                        </button>
-                                    </li>
-                                    <li class="mb-1">
-                                        <button class="btn btn-toggle align-items-center rounded text-white">
-                                          Timeline
-                                        </button>
-                                    </li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Starter Page</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">With preloader</a></li>
+                                    <li><a href="#" class="rounded side-nav-link py-1">Timeline</a></li>
                                   </ul>
                                 </div>
                             </li>
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded text-white">
-                                  Landing
+                                <button class="btn btn-toggle align-items-center rounded sidebar-item-normal d-flex align-items-center gap-3">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                                  </svg>
+                                  <span>
+                                    Landing
+                                  </span>
                                 </button>
                             </li>
                             <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#Layouts-collapse" aria-expanded="false">
-                                  Layouts
+                                <button class="btn btn-toggle align-items-center rounded collapsed sidebar-item-normal d-flex align-items-center gap-3" data-bs-toggle="collapse" data-bs-target="#Layouts-collapse" aria-expanded="false">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                                    <path d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+                                  </svg>
+                                  <span>
+                                    Layouts
+                                  </span>
                                 </button>
-                                <div class="collapse" id="Pages-collapse">
+                                <div class="collapse" id="Layouts-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                                        <li><a href="#" class=" rounded">Horizontal</a></li>
-                                        <li><a href="#" class=" rounded">Detached</a></li>
-                                        <li><a href="#" class=" rounded">Full View</a></li>
-                                        <li><a href="#" class=" rounded">Full Screen View</a></li>
-                                        <li><a href="#" class="rounded">Hover menu</a></li>
-                                        <li><a href="#" class="rounded">Compact</a></li>
-                                        <li><a href="#" class="rounded">Icon view</a></li>
+                                        <li><a href="#" class="rounded side-nav-link py-1">Horizontal</a></li>
+                                        <li><a href="#" class="rounded side-nav-link py-1">Detached</a></li>
+                                        <li><a href="#" class="rounded side-nav-link py-1">Full View</a></li>
+                                        <li><a href="#" class="rounded side-nav-link py-1">Full Screen View</a></li>
+                                        <li><a href="#" class="rounded side-nav-link py-1">Hover menu</a></li>
+                                        <li><a href="#" class="rounded side-nav-link py-1">Compact</a></li>
+                                        <li><a href="#" class="rounded side-nav-link py-1">Icon view</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -239,8 +308,8 @@
                 </div>
               </div>
         </div>
-        <div class="rightbar" style="height: 100vh; width: 100vw;">
-            <div class="navbar-right d-flex align-items-center justify-content-between py-2" style="box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.1); background-color: white;">
+        <div class="rightbar" style="height: 100vh; width: 100vw; position: static;height: 100vh; overflow-y: scroll; overflow-x: hidden;scrollbar-width: none;">
+            <div class="navbar-right d-flex align-items-center justify-content-between py-2" style="position: sticky; top:0;box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.1); background-color: white;">
                 <div class="left-navbar d-flex align-items-center">
                     <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -427,7 +496,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-content ps-4 pe-4">
+            <div class="main-content ps-4 pe-4 me-4">
               <div class="col-lg-12 mt-4 top-content">
                 <div>
                   <h5 class="text-muted mb-4">Projects</h5>
@@ -439,7 +508,7 @@
                       <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
                     </svg>
                     <p class="text-muted fw-bold mb-0 fs-2">29</p>
-                    <p class="text-muted fw-semibold mb-0 fs-4">Total Projects</p>
+                    <p class="text-muted fw-semibold mb-0 fs-5">Total Projects</p>
                   </div>
                   <div class="col-lg-3 text-center py-4" style="border-right: 1px solid rgb(185, 185, 185);;">
                     <!-- Brief case logo -->
@@ -447,7 +516,7 @@
                       <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
                     </svg>
                     <p class="text-muted fw-bold mb-0 fs-2">29</p>
-                    <p class="text-muted fw-semibold mb-0 fs-4">Total Projects</p>
+                    <p class="text-muted fw-semibold mb-0 fs-5">Total Projects</p>
                   </div>
                   <div class="col-lg-3 text-center py-4" style="border-right: 1px solid rgb(185, 185, 185);">
                     <!-- Brief case logo -->
@@ -455,7 +524,7 @@
                       <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
                     </svg>
                     <p class="text-muted fw-bold mb-0 fs-2">29</p>
-                    <p class="text-muted fw-semibold mb-0 fs-4">Total Projects</p>
+                    <p class="text-muted fw-semibold mb-0 fs-5">Total Projects</p>
                   </div>
                   <div class="col-lg-3 text-center py-4">
                     <!-- Brief case logo -->
@@ -463,12 +532,12 @@
                       <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
                     </svg>
                     <p class="text-muted fw-bold mb-0 fs-2">29</p>
-                    <p class="text-muted fw-semibold mb-0 fs-4">Total Projects</p>
+                    <p class="text-muted fw-semibold mb-0 fs-5">Total Projects</p>
                   </div>
                 </div> 
               </div>
-              <div class="second-content mt-4 d-flex pe-4">
-                <div class="col-lg-4 second-content-card me-4 d-flex flex-column justify-content-around pb-4 ">
+              <div class="second-content mt-4 d-flex pe-4" style="height: 450px; padding-bottom: 25px;">
+                <div class="col-lg-5 second-content-card me-4 d-flex flex-column justify-content-around  pb-3">
                   <div class="d-flex justify-content-between py-2 px-3">
                     <span class="text-secondary fw-bold">PROJECT STATUS</span>
                     <span class="text-secondary">
@@ -477,9 +546,32 @@
                       </svg>
                     </span>
                   </div>
-                  <canvas id="myChart" style="width:100%;max-width:600px;height: 300px;"></canvas>
+                  <canvas id="myChart" style="width:80%;max-width:90%; height: 50% ;margin: auto;"></canvas>
+                  <div class="d-flex mt-3 flex-wrap">
+                    <div class="col-lg-4 text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#0acf97" class="bi bi-graph-up-arrow" viewBox="0 0 25 25">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                      <p class="mb-0 text-secondary-emphasis fs-3">64%</p>
+                      <p class="mb-0 text-secondary" >Completed</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#727cf5" class="bi bi-graph-up-arrow" viewBox="0 0 25 25">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                      <p class="mb-0 text-secondary-emphasis fs-3">26%</p>
+                      <p class="mb-0 text-secondary" >In-Progress</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fa5c7c" class="bi bi-graph-up-arrow" viewBox="0 0 25 25">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                      <p class="mb-0 text-secondary-emphasis fs-3">10%</p>
+                      <p class="mb-0 text-secondary" >Behind</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-8 second-content-card ">
+                <div class="col-lg-7 second-content-card">
                   <div class="d-flex justify-content-between py-2 px-3">
                     <span class="text-secondary fw-bold">TASKS</span>
                     <span class="text-secondary">
@@ -491,7 +583,137 @@
                   <div class="text-center bg-light py-1" style="border-top: 1px solid rgb(189, 189, 189); border-bottom: 1px solid rgb(189, 189, 189);">
                     <p class="m-0">107 Tasks completed out of 195</p>
                   </div>
-                  <div>
+                  <div >
+                    <div class="col-lg-12 d-flex table-entry p-3" style="border-bottom:1px solid rgb(196, 196, 196) ;">
+                      <div class="col-lg-4">
+                        <p class="mb-0 fw-bold grey-text-table-top">Coffee detail page - Main Page</p>
+                        <p class="mb-0 grey-text-table-down">Due in 3 days</p>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Status</p>
+                        <span class="rounded p-1 text-warning fw-bold" style="font-size: 10px; background-color: rgba(255, 251, 0, 0.422); ">In-progress	</span>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Assigned to</p>
+                        <p class="mb-0 grey-text-table-down">Logan R. Cohn</p>
+                      </div>
+                      <div class="col-lg-3">
+                        <p class="mb-0 grey-text-table-top">Total time spend</p>
+                        <p class="mb-0 grey-text-table-down">3h 20min</p>
+                      </div>
+                      <div class="col-lg-1 d-flex gap-3 align-items-center grey-text-table-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 d-flex table-entry p-3" style="border-bottom:1px solid rgb(196, 196, 196) ;">
+                      <div class="col-lg-4">
+                        <p class="mb-0 fw-bold grey-text-table-top">Coffee detail page - Main Page</p>
+                        <p class="mb-0 grey-text-table-down">Due in 3 days</p>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Status</p>
+                        <span class="rounded p-1 text-warning fw-bold" style="font-size: 10px; background-color: rgba(255, 251, 0, 0.422); ">In-progress	</span>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Assigned to</p>
+                        <p class="mb-0 grey-text-table-down">Logan R. Cohn</p>
+                      </div>
+                      <div class="col-lg-3">
+                        <p class="mb-0 grey-text-table-top">Total time spend</p>
+                        <p class="mb-0 grey-text-table-down">3h 20min</p>
+                      </div>
+                      <div class="col-lg-1 d-flex gap-3 align-items-center grey-text-table-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 d-flex table-entry p-3" style="border-bottom:1px solid rgb(196, 196, 196) ;">
+                      <div class="col-lg-4">
+                        <p class="mb-0 fw-bold grey-text-table-top">Coffee detail page - Main Page</p>
+                        <p class="mb-0 grey-text-table-down">Due in 3 days</p>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Status</p>
+                        <span class="rounded p-1 text-warning fw-bold" style="font-size: 10px; background-color: rgba(255, 251, 0, 0.422); ">In-progress	</span>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Assigned to</p>
+                        <p class="mb-0 grey-text-table-down">Logan R. Cohn</p>
+                      </div>
+                      <div class="col-lg-3">
+                        <p class="mb-0 grey-text-table-top">Total time spend</p>
+                        <p class="mb-0 grey-text-table-down">3h 20min</p>
+                      </div>
+                      <div class="col-lg-1 d-flex gap-3 align-items-center grey-text-table-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 d-flex table-entry p-3" style="border-bottom:1px solid rgb(196, 196, 196) ;">
+                      <div class="col-lg-4">
+                        <p class="mb-0 fw-bold grey-text-table-top">Coffee detail page - Main Page</p>
+                        <p class="mb-0 grey-text-table-down">Due in 3 days</p>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Status</p>
+                        <span class="rounded p-1 text-warning fw-bold" style="font-size: 10px; background-color: rgba(255, 251, 0, 0.422); ">In-progress	</span>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Assigned to</p>
+                        <p class="mb-0 grey-text-table-down">Logan R. Cohn</p>
+                      </div>
+                      <div class="col-lg-3">
+                        <p class="mb-0 grey-text-table-top">Total time spend</p>
+                        <p class="mb-0 grey-text-table-down">3h 20min</p>
+                      </div>
+                      <div class="col-lg-1 d-flex gap-3 align-items-center grey-text-table-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 d-flex table-entry p-3" style="border-bottom:1px solid rgb(196, 196, 196) ;">
+                      <div class="col-lg-4">
+                        <p class="mb-0 fw-bold grey-text-table-top">Coffee detail page - Main Page</p>
+                        <p class="mb-0 grey-text-table-down">Due in 3 days</p>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Status</p>
+                        <span class="rounded p-1 text-warning fw-bold" style="font-size: 10px; background-color: rgba(255, 251, 0, 0.422); ">In-progress	</span>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mb-0 grey-text-table-top">Assigned to</p>
+                        <p class="mb-0 grey-text-table-down">Logan R. Cohn</p>
+                      </div>
+                      <div class="col-lg-3">
+                        <p class="mb-0 grey-text-table-top">Total time spend</p>
+                        <p class="mb-0 grey-text-table-down">3h 20min</p>
+                      </div>
+                      <div class="col-lg-1 d-flex gap-3 align-items-center grey-text-table-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                        </svg>
+                      </div>
+                    </div>
                     <div class="col-lg-12 d-flex table-entry p-3" style="border-bottom:1px solid rgb(196, 196, 196) ;">
                       <div class="col-lg-4">
                         <p class="mb-0 fw-bold grey-text-table-top">Coffee detail page - Main Page</p>
@@ -625,7 +847,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
         </div>
     </div>
@@ -637,18 +858,25 @@
           var barColors = ["#0acf97","#727cf5","#fa5c7c"];
           new Chart("myChart", {
               type: "doughnut",
+              borderWidth :1 ,
               data: {
                   labels: xValues,
                   datasets: [{
-                      backgroundColor: barColors,
-                      data: yValues
+                    backgroundColor: barColors,
+                    data: yValues,
+                    // borderWidth: 1
+                    cutout:'10%',
                   }]
               },
+              
               options: {
                   title: {
                       display: true,
                       text: "Project Status"
-                  }
+                  },
+                  legend: {
+                    display: false
+                  },
               }
           });
       }
